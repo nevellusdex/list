@@ -39,7 +39,7 @@ const bobaBnb = require("../tokens/boba-bnb.json");
 module.exports = function buildList() {
   const parsed = version.split(".");
   return {
-    name: "Nevellus Menu",
+    name: "Nevellus Token List",
     timestamp: new Date().toISOString(),
     version: {
       major: +parsed[0],
