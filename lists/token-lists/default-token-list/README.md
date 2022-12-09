@@ -1,3 +1,3 @@
-# `@sushiswap/default-token-list`
+# `@nevellusdex/default-token-list`
 
 ...

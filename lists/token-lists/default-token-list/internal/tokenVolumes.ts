@@ -1,5 +1,5 @@
 import { request, gql } from "graphql-request";
-import { ChainId } from "@sushiswap/core-sdk";
+import { ChainId } from "@nevellusdex/core-sdk";
 import XLSX from "xlsx";
 import { readFileSync } from "fs";
 
@@ -15,7 +15,7 @@ export const GRAPH_HOST: Partial<Record<ChainId, string>> = {
   [ChainId.AVALANCHE]: THE_GRAPH,
   [ChainId.CELO]: THE_GRAPH,
   [ChainId.ARBITRUM]: THE_GRAPH,
-  [ChainId.HARMONY]: "https://sushi.graph.t.hmny.io",
+  [ChainId.HARMONY]: "not_use",
   [ChainId.OKEX]: HYPER_GRAPH,
   [ChainId.HECO]: HYPER_GRAPH,
   [ChainId.MOONRIVER]: THE_GRAPH,
@@ -27,35 +27,35 @@ export const GRAPH_HOST: Partial<Record<ChainId, string>> = {
 
 export const BLOCKS: Partial<Record<ChainId, string>> = {
   [ChainId.ETHEREUM]: "blocklytics/ethereum-blocks",
-  [ChainId.XDAI]: "matthewlilley/xdai-blocks",
-  [ChainId.MATIC]: "matthewlilley/polygon-blocks",
-  [ChainId.FANTOM]: "matthewlilley/fantom-blocks",
-  [ChainId.BSC]: "matthewlilley/bsc-blocks",
-  [ChainId.HARMONY]: "sushiswap/harmony-blocks",
-  [ChainId.AVALANCHE]: "matthewlilley/avalanche-blocks",
-  [ChainId.CELO]: "ubeswap/celo-blocks",
-  [ChainId.ARBITRUM]: "sushiswap/arbitrum-blocks",
+  [ChainId.XDAI]: "fernandojr/xdai-blocks",
+  [ChainId.MATIC]: "fernandojr/polygon-blocks",
+  [ChainId.FANTOM]: "fernandojr/fantom-blocks",
+  [ChainId.BSC]: "fernandojr/bsc-blocks",
+  [ChainId.HARMONY]: "fernandojr/harmony-blocks",
+  [ChainId.AVALANCHE]: "fernandojr/avalanche-blocks",
+  [ChainId.CELO]: "fernandojr/celo-blocks",
+  [ChainId.ARBITRUM]: "fernandojr/arbitrum-blocks",
   [ChainId.OKEX]: "okexchain-blocks/oec",
   [ChainId.HECO]: "hecoblocks/heco",
-  [ChainId.MOONRIVER]: "sushiswap/moonriver-blocks",
-  [ChainId.FUSE]: "sushiswap/fuse-blocks",
+  [ChainId.MOONRIVER]: "fernandojr/moonriver-blocks",
+  [ChainId.FUSE]: "fernandojr/fuse-blocks",
   [ChainId.KOVAN]: "blocklytics/kovan-blocks",
-  [ChainId.MOONBEAM]: "sushiswap/moonbeam-blocks",
+  [ChainId.MOONBEAM]: "fernandojr/moonbeam-blocks",
 };
 
 export const EXCHANGE: Partial<Record<ChainId, string>> = {
-  [ChainId.ETHEREUM]: "sushiswap/exchange",
-  [ChainId.XDAI]: "sushiswap/xdai-exchange",
-  [ChainId.MATIC]: "sushiswap/matic-exchange",
-  [ChainId.FANTOM]: "sushiswap/fantom-exchange",
-  [ChainId.BSC]: "sushiswap/bsc-exchange",
-  [ChainId.HARMONY]: "sushiswap/harmony-exchange",
-  [ChainId.AVALANCHE]: "sushiswap/avalanche-exchange",
-  [ChainId.CELO]: "jiro-ono/sushitestsubgraph",
-  [ChainId.ARBITRUM]: "sushiswap/arbitrum-exchange",
-  [ChainId.MOONRIVER]: "sushiswap/moonriver-exchange",
-  [ChainId.FUSE]: "sushiswap/fuse-exchange",
-  [ChainId.MOONBEAM]: "sushiswap/moonbeam-exchange",
+  [ChainId.ETHEREUM]: "fernandojr/exchange",
+  [ChainId.XDAI]: "fernandojr/xdai-exchange",
+  [ChainId.MATIC]: "fernandojr/matic-exchange",
+  [ChainId.FANTOM]: "fernandojr/fantom-exchange",
+  [ChainId.BSC]: "fernandojr/bsc-exchange",
+  [ChainId.HARMONY]: "fernandojr/harmony-exchange",
+  [ChainId.AVALANCHE]: "fernandojr/avalanche-exchange",
+  [ChainId.CELO]: "fernandojr/celo-exchange",
+  [ChainId.ARBITRUM]: "fernandojr/arbitrum-exchange",
+  [ChainId.MOONRIVER]: "fernandojr/moonriver-exchange",
+  [ChainId.FUSE]: "fernandojr/fuse-exchange",
+  [ChainId.MOONBEAM]: "fernandojr/moonbeam-exchange",
 };
 
 const blockQuery = gql`

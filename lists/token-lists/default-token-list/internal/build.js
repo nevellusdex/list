@@ -39,7 +39,7 @@ const bobaBnb = require("../tokens/boba-bnb.json");
 module.exports = function buildList() {
   const parsed = version.split(".");
   return {
-    name: "SushiSwap Menu",
+    name: "Nevellus Menu",
     timestamp: new Date().toISOString(),
     version: {
       major: +parsed[0],
@@ -48,8 +48,8 @@ module.exports = function buildList() {
     },
     tags: {},
     logoURI:
-      "https://raw.githubusercontent.com/nevellusdex/art/master/sushi/logo-256x256.png",
-    keywords: ["sushiswap", "default"],
+      "https://avatars.githubusercontent.com/u/118773832?s=200&v=4",
+    keywords: ["nevellus", "default"],
     tokens: sortTokens([
       ...ethereum,
       ...ropsten,

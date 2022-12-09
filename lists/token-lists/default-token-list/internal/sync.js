@@ -4,7 +4,7 @@ const { Octokit } = require("@octokit/rest");
 
 const octokit = new Octokit();
 
-const { ChainId } = require("@sushiswap/core-sdk");
+const { ChainId } = require("@nevellusdex/core-sdk");
 
 const fs = require("fs");
 
@@ -58,10 +58,10 @@ const NAME = {
 
       const tokens = require(path);
 
-      // Grab file file names of the sushiswap/icons repo at the token path
+      // Grab file file names of the nevellusdex/icons repo at the token path
       // we can use this to see if our default list is missing icons
       const { data } = await octokit.rest.repos.getContent({
-        owner: "sushiswap",
+        owner: "nevellusdex",
         repo: "icons",
         path: "token",
       });
@@ -93,7 +93,7 @@ const NAME = {
         }
 
         // Check if logoURI has correct path
-        if (!token.logoURI.includes("sushiswap/icons")) {
+        if (!token.logoURI.includes("nevellusdex/icons")) {
           // TODO: Automate this part...
           const logoURI = `https://raw.githubusercontent.com/nevellusdex/list/master/logos/token-logos/token/${icon}.jpg`;
 

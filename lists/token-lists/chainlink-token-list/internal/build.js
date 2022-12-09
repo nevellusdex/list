@@ -14,8 +14,8 @@ module.exports = function () {
     },
     tags: {},
     logoURI:
-      "https://raw.githubusercontent.com/nevellusdex/art/master/sushi/logo-256x256.png",
-    keywords: ["sushiswap", "chainlink", "tokenlist"],
+      "https://avatars.githubusercontent.com/u/118773832?s=200&v=4",
+    keywords: ["nevellus", "chainlink", "tokenlist"],
     tokens: sortTokens([...require("../tokens/ethereum.json")]),
   };
 };
