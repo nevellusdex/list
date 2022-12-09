@@ -4,7 +4,7 @@ const { sortTokens } = require("builder");
 module.exports = function () {
   const parsed = version.split(".");
   return {
-    name: "SushiSwap Testnet",
+    name: "Nevellus Testnet",
     timestamp: new Date().toISOString(),
     version: {
       major: +parsed[0],
@@ -13,8 +13,8 @@ module.exports = function () {
     },
     tags: {},
     logoURI:
-      "https://raw.githubusercontent.com/nevellusdex/art/master/sushi/logo-256x256.png",
-    keywords: ["sushiswap", "default"],
+      "https://avatars.githubusercontent.com/u/118773832?s=200&v=4",
+    keywords: ["nevellus", "default"],
     tokens: sortTokens([
       ...require("../tokens/kovan.json"),
       ...require("../tokens/rinkeby.json"),

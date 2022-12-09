@@ -1,3 +1,3 @@
-# `@sushiswap/community-token-list`
+# `@nevellusdex/community-token-list`
 
 ...

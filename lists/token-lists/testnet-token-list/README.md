@@ -1,3 +1,3 @@
-# `@sushiswap/testnet-token-list`
+# `@nevellusdex/testnet-token-list`
 
 ...
